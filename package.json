@@ -9,13 +9,16 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "ci:build-storybook": "storybook build -o dist-storybook",
+    "ci:storycap": "storycap --serverCmd \"npx http-server dist-storybook -p 9001\" http://localhost:9001 --serverTimeout 100000 --outDir ./screenshots"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@argos-ci/cli": "^1.0.9",
     "@storybook/addon-essentials": "^7.6.12",
     "@storybook/addon-interactions": "^7.6.12",
     "@storybook/addon-links": "^7.6.12",
@@ -34,6 +37,7 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
     "storybook": "^7.6.12",
+    "storycap": "^4.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }

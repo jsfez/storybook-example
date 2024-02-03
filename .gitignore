@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Storybook build output
+./storybook-static
+
+# Storycap screenshots
+./screenshots
