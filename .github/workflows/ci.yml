@@ -18,7 +18,7 @@ jobs:
         run: npm exec -- storybook build --output-dir ./storybook-static
 
       - name: Screenshot Storybook with Storycap
-        run: npm exec -- storycap --outDir ./screenshots --serverCmd "npx http-server ./storybook-static -p 9001"
+        run: npm exec -- storycap --outDir ./screenshots --serverCmd "npm exec -- http-server ./storybook-static --port 9001"
 
       - name: Upload screenshots to Argos
         run: npm exec -- argos upload ./screenshots
