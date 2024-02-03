@@ -9,9 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "ci:build-storybook": "storybook build -o dist-storybook",
-    "ci:storycap": "storycap --serverCmd \"npx http-server dist-storybook -p 9001\" http://localhost:9001 --serverTimeout 100000 --outDir ./screenshots"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^18.2.0",
