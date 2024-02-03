@@ -35,6 +35,7 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
     "http-server": "^14.1.1",
+    "puppeteer": "^21.11.0",
     "storybook": "^7.6.12",
     "storycap": "^4.2.0",
     "typescript": "^5.2.2",
